@@ -1,10 +1,23 @@
 body {
-  font-family: $SFPD;
+  // font-family: $SFPD;
   font-style: normal;
+  color: black;
+
+  & > * > * {
+    transition: 0.4s ease-in-out;
+  }
 }
 
 main {
   overflow: hidden;
+
+  & > * > * {
+    color: black;
+  }
+}
+
+.hide {
+  display: none;
 }
 
 .container {

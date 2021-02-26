@@ -68,41 +68,41 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.(png|jpg|gif|svg|webp)$/,
-          include: path.join(__dirname, 'src', 'img'),
-          loader: 'file-loader',
+          include: path.join(__dirname, "src", "img"),
+          loader: "file-loader",
           options: {
             outputPath: (url, resourcePath, context) => {
-              url = url.replace(/\\/ig, '/')
-              url = url.replace('img/', 'assets/img/')
-              return url
+              url = url.replace(/\\/gi, "/");
+              url = url.replace("img/", "assets/img/");
+              return url;
             },
             publicPath: (url, resourcePath, context) => {
-              url = url.replace(/\\/ig, '/')
-              url = url.replace('img/', '../img/')
-              return url
+              url = url.replace(/\\/gi, "/");
+              url = url.replace("img/", "../img/");
+              return url;
             },
             regExp: /src\\(.*)/i,
-            name: '[1]'
-          }
+            name: "[1]",
+          },
         },
         {
           test: /\.(eot|otf|ttf|woff|woff2)$/,
-          include: path.join(__dirname, 'src', 'fonts'),
-          loader: 'file-loader',
+          include: path.join(__dirname, "src", "fonts"),
+          loader: "file-loader",
           options: {
             outputPath: (url, resourcePath, context) => {
-              url = url.replace(/\\/ig, '/')
-              url = url.replace('fonts/', 'assets/fonts/')
-              return url
+              url = url.replace(/\\/gi, "/");
+              url = url.replace("fonts/", "assets/fonts/");
+              return url;
             },
             publicPath: (url, resourcePath, context) => {
-              url = url.replace(/\\/ig, '/')
-              url = url.replace('fonts/', '../fonts/')
-              return url
+              url = url.replace(/\\/gi, "/");
+              url = url.replace("fonts/", "../fonts/");
+              return url;
             },
             regExp: /src\\(.*)/i,
-            name: '[1]'
-          }
+            name: "[1]",
+          },
         },
 
         /*
@@ -135,7 +135,7 @@ module.exports = (env, argv) => {
         patterns: [
           { from: "src/img/", to: "assets/img/" },
           { from: "src/fav/", to: "assets/fav/" },
-          // {from: 'src/fonts/', to: 'assets/fonts/',}
+          { from: "src/fonts/", to: "assets/fonts/" },
         ],
       }),
       new ImageminPlugin({

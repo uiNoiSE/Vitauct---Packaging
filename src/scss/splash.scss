@@ -1,0 +1,147 @@
+.splash {
+  width: 100vw;
+  height: 100vh;
+
+  &-inner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    transform: skewX(2.2deg); /* 5.8deg */
+    transform-origin: top center;
+  }
+
+  &__line {
+    position: relative;
+    transition: 0.4s ease-in-out;
+
+    width: 25%;
+    height: 100%;
+    display: flex;
+    padding: 15% 0;
+
+    opacity: 0;
+
+    animation: fade-in-rigth 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+    @media ($m-xxxxs) and (orientation: landscape) {
+      padding: 2% 0;
+    }
+
+    @keyframes fade-in-rigth {
+      0% {
+        transform: translateX(-1000%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+
+    &:nth-child(1) {
+      background-color: #1ec6dc;
+
+      & > .splash__img {
+        margin-bottom: auto;
+
+        animation-delay: 1300ms;
+
+        & > img {
+          left: 10px;
+
+          width: auto;
+          height: 300px;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        left: -45vw;
+        content: "";
+
+        width: 50vw;
+        height: inherit;
+        background-color: inherit;
+      }
+    }
+
+    &:nth-child(2) {
+      z-index: 2;
+      background-color: #ef870a;
+
+      animation-delay: 350ms;
+
+      & > .splash__img {
+        margin-top: auto;
+
+        animation-delay: 1500ms;
+
+        & > img {
+          left: -10px;
+
+          width: auto;
+          height: 280px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+      background-color: #9bcc00;
+
+      animation-delay: 750ms;
+
+      & > .splash__img {
+        margin-bottom: auto;
+
+        animation-delay: 1700ms;
+
+        & > img {
+          left: 20px;
+
+          width: auto;
+          height: 280px;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      z-index: 4;
+      background-color: #595fb7;
+
+      animation-delay: 1100ms;
+
+      & > .splash__img {
+        margin-top: auto;
+
+        animation-delay: 1900ms;
+
+        & > img {
+          left: 0px;
+
+          width: auto;
+          height: 270px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+
+    animation: fade-in-rigth 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+    & > img {
+      position: relative;
+    }
+  }
+}
