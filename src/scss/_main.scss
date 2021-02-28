@@ -2,10 +2,10 @@ body {
   // font-family: $SFPD;
   font-style: normal;
   color: black;
+}
 
-  & > * > * {
-    transition: 0.4s ease-in-out;
-  }
+section {
+  transition: 0.4s ease-in-out;
 }
 
 main {
