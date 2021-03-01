@@ -47,7 +47,7 @@
     }
 
     &:nth-child(1) {
-      background-color: #1ec6dc;
+      background-color: $c-cyan;
 
       & > .splash__img {
         margin-bottom: auto;
@@ -77,7 +77,7 @@
 
     &:nth-child(2) {
       z-index: 2;
-      background-color: #ef870a;
+      background-color: $c-orange;
 
       animation-delay: 350ms;
 
@@ -97,7 +97,7 @@
 
     &:nth-child(3) {
       z-index: 3;
-      background-color: #9bcc00;
+      background-color: $c-lime;
 
       animation-delay: 750ms;
 
@@ -117,7 +117,7 @@
 
     &:nth-child(4) {
       z-index: 4;
-      background-color: #595fb7;
+      background-color: $c-lavender;
 
       animation-delay: 1100ms;
 

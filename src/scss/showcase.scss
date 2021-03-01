@@ -1,0 +1,42 @@
+.showcase {
+  max-width: none;
+  margin: 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 350px);
+
+    @media ($m-xxxxs) and (orientation: landscape) {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(2, 350px);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+
+    & > img {
+      width: auto;
+    }
+
+    &:nth-child(1) {
+      background-color: $c-cyan;
+    }
+
+    &:nth-child(2) {
+      background-color: $c-orange;
+    }
+
+    &:nth-child(3) {
+      background-color: $c-lime;
+    }
+
+    &:nth-child(4) {
+      background-color: $c-lavender;
+    }
+  }
+}
