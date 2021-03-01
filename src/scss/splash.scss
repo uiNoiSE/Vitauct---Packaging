@@ -1,8 +1,11 @@
 .splash {
   position: relative;
-
+  
   width: 100vw;
   height: 100vh;
+  
+  margin: 0;
+  max-width: none;
 
   &-inner {
     width: 100%;

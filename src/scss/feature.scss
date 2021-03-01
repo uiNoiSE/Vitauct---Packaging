@@ -1,0 +1,49 @@
+.feature {
+  position: relative;
+
+  max-width: none;
+  font-family: $Futura;
+  text-align: right;
+  // color: $c-white;
+
+  & > .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  &__text-wrap {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &__headline {
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+
+  &__flower {
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 180px;
+    margin: 0 auto;
+
+    @media ($m-xxxsa) {
+      width: 200px;
+    }
+  }
+
+  &__bg {
+    margin-top: 60px;
+    z-index: 0;
+  }
+}
