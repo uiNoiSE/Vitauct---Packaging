@@ -17,6 +17,16 @@ main {
 }
 
 .hide {
+  animation: fade-out 1s ease-in-out forwards !important;
+
+  @keyframes fade-out {
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.disabled {
   display: none;
 }
 

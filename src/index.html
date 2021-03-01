@@ -15,6 +15,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="preload" href="assets/img/splash--blue.webp" as="image" />
+  <link rel="preload" href="assets/img/splash--orange.webp" as="image" />
+  <link rel="preload" href="assets/img/splash--green.webp" as="image" />
+  <link rel="preload" href="assets/img/splash--orange.webp" as="image" />
+
   <link rel="preload" crossorigin href="assets/fonts/FranklinGothicBookC.woff" as="font" />
   <link rel="preload" crossorigin href="assets/fonts/FuturaDemic.woff" as="font" />
 
@@ -59,7 +64,14 @@
 
   <main>
     <section class="splash">
-      <div class="container">
+
+      <div class="splash__logo">
+        <svg class="svg-icon">
+          <use xlink:href="#i-splash"></use>
+        </svg>
+      </div>
+
+      <div class="container disabled">
         <div class="splash-inner">
 
           <div class="splash__line">
@@ -88,14 +100,6 @@
 
 
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="splash__bg">
-        <svg class="svg-icon">
-          <use xlink:href="#i-splash"></use>
-        </svg>
       </div>
     </section>
 

@@ -1,11 +1,6 @@
-// window.onload = function () {
-//   init();
-// };
+window.addEventListener("load", pageReady, false);
 
-// document.addEventListener("DOMContentLoaded", function () {
-// });
-
-function init() {
-  let splash = document.querySelector("section.splash > .container");
-  splash.classList.remove("hide");
+function pageReady(e) {
+  document.querySelector(".splash__logo").classList.add("hide");
+  setTimeout(document.querySelector(".splash > .container").classList.remove("disabled"), 1000)
 }
