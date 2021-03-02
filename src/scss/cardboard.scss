@@ -1,0 +1,46 @@
+.cardboard {
+  position: relative;
+
+  &__text {
+    padding: 10% 0;
+    font-family: $Franklin;
+    font-size: 0.9em;
+  }
+
+  &__rows {
+    width: 430%;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: -215%;
+
+    animation: slide 30s linear infinite;
+
+    &:nth-child(2) {
+      transform: translate3d(-18.5%, -45px, 0);
+    }
+
+    @keyframes slide {
+      100% {
+        margin-left: 0;
+      }
+    }
+
+    &-wrapper {
+      width: 100vw;
+      margin: 10% 0;
+
+      transform: rotate(-15deg);
+    }
+  }
+
+  &__columns {
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+  }
+
+  &__item {
+  }
+}
