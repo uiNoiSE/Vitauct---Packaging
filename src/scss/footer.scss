@@ -1,0 +1,12 @@
+.footer {
+  padding: 10% 0 20% 0;
+
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    width: 120px;
+    height: 26px;
+    color: $c-green;
+  }
+}

@@ -16,7 +16,7 @@ $m-2k: "min-width: 2500px";
 $m-4k: "min-width: 3800px";
 
 $ma-xxs: "max-width: 376px";
-$ma-xs: "max-width: 567px";
+$ma-xs: "max-width: 568px";
 $ma-s: "max-width: 767px";
 $ma-m: "max-width: 991px";
 $ma-l: "max-width: 1279px";
@@ -27,9 +27,18 @@ $ma-xxl: "max-width: 1599px";
 $c-black: #000000;
 $c-white: #ffffff;
 
+$c-fontcolor: #231F20;
+$c-green: #419639;
+
+$c-cyan: #1EC6DC;
+$c-orange: #EF870A;
+$c-lime: #9BCC00;
+$c-lavender: #595FB7;
+
 
 // Fonts
-// $SFPD: 'SF Pro Display', Arial, sans-serif;
+$Futura: 'FuturaDemiC', Arial, ui-sans-serif;
+$Franklin: 'FranklinGothicBookC', Arial, ui-sans-serif;
 
 // Gradients
 

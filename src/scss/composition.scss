@@ -1,0 +1,192 @@
+.composition {
+  padding: 20px 0;
+  height: 600px;
+
+  // min-width: 100vw;
+
+  @media ($m-xxxxs) and (orientation: landscape) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  font-family: $Franklin;
+
+  &-inner {
+    position: relative;
+  }
+
+  &__layer {
+    position: relative;
+
+    &:nth-child(1) {
+      z-index: 4;
+    }
+
+    &:nth-child(2) {
+      z-index: 3;
+    }
+
+    &:nth-child(3) {
+      z-index: 2;
+    }
+  }
+
+  &__item {
+    position: absolute;
+
+    // package
+    &--lavander {
+      top: 235px;
+      left: 8.75%;
+
+      width: 195px;
+      height: 265px;
+      transform: rotateZ(-35deg);
+    }
+
+    &--cyan {
+      top: 194px;
+      left: 48.75%;
+
+      width: 123px;
+      height: 176px;
+    }
+
+    &--lime {
+      top: 72px;
+      left: 27.19%;
+
+      width: 139px;
+      height: 132px;
+
+      transform: rotateZ(-28deg);
+      filter: blur(0.5px);
+    }
+
+    // description
+    &-container {
+      position: relative;
+    }
+
+    &-inner {
+      position: absolute;
+      display: flex;
+
+      & > p {
+        font-size: 12px;
+      }
+
+      &--dandelion {
+        top: 22px;
+        left: 28px;
+
+        width: 144px;
+        height: 78px;
+
+        & > img {
+          width: 74.18px;
+          height: 78px;
+
+          transform: matrix(1, -0, -0, -1, 0, 0);
+        }
+
+        & > p {
+          margin-left: 5px;
+        }
+      }
+
+      &--calendula {
+        top: 452px;
+        left: 40px;
+
+        width: 218px;
+        height: 96.45px;
+
+        align-items: flex-end;
+
+        & > img {
+          width: 131.71px;
+          height: 96.45px;
+
+          transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+      }
+
+      &--rosemary {
+        top: 367px;
+        left: 161px;
+
+        width: 128.21px;
+        height: 70.65px;
+
+        align-items: center;
+
+        & > img {
+          width: 71px;
+          height: 65px;
+        }
+
+        & > p {
+          margin-top: 10px;
+          margin-left: 2px;
+        }
+      }
+
+      &--mint {
+        top: 130px;
+        left: 37px;
+
+        width: 136px;
+        height: 74px;
+
+        align-items: flex-end;
+
+        & > img {
+          width: 106px;
+          height: 74px;
+        }
+
+        & > p {
+          margin-right: -15px;
+        }
+
+        &-leaf {
+          top: 282px;
+          left: 161px;
+
+          width: 43px;
+          height: 38px;
+        }
+      }
+
+      &--chamomile {
+        top: 70px;
+        left: 173px;
+
+        width: 119.5px;
+        height: 52.66px;
+
+        & > img {
+          width: 67.5px;
+          height: 51.34px;
+
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        & > p {
+          margin-bottom: 20px;
+          margin-top: -15px;
+          margin-right: 5px;
+        }
+
+        &-blured {
+          top: 248px;
+          left: 68.12%;
+
+          width: 104px;
+          height: 106px;
+        }
+      }
+    }
+  }
+}

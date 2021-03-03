@@ -1,14 +1,65 @@
 body {
-  font-family: $SFPD;
   font-style: normal;
+  color: black;
+}
+
+section {
+  transition: 0.4s ease-in-out;
 }
 
 main {
   overflow: hidden;
+
+  & > * > * {
+    color: black;
+  }
+}
+
+.hide {
+  animation: fade-out 1s ease-in-out forwards !important;
+
+  @keyframes fade-out {
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.disabled {
+  display: none;
 }
 
 .container {
-  margin: 0 auto;
+  @media  ($ma-xs) {
+    max-width: none;
+    padding: 0 0.75rem;
+  }
+  
+  @media ($m-xs) {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  @media ($m-mm) {
+    max-width: 720px;
+  }
+
+  @media ($m-m) {
+    max-width: 960px;
+  }
+
+  @media ($m-l) {
+    max-width: 1140px;
+  }
+
+  @media ($m-xl) {
+    max-width: 1320px;
+  }
+
+  &--no-mw {
+    max-width: none;
+    padding: 0;
+  }
 }
 
 .svg-icon {
