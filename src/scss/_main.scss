@@ -4,9 +4,6 @@ body {
 }
 
 section {
-  max-width: 300px;
-  
-  margin: 0 auto;
   transition: 0.4s ease-in-out;
 }
 
@@ -33,7 +30,36 @@ main {
 }
 
 .container {
-  margin: 0 auto;
+  @media  ($ma-xs) {
+    max-width: none;
+    padding: 0 0.75rem;
+  }
+  
+  @media ($m-xs) {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  @media ($m-mm) {
+    max-width: 720px;
+  }
+
+  @media ($m-m) {
+    max-width: 960px;
+  }
+
+  @media ($m-l) {
+    max-width: 1140px;
+  }
+
+  @media ($m-xl) {
+    max-width: 1320px;
+  }
+
+  &--no-mw {
+    max-width: none;
+    padding: 0;
+  }
 }
 
 .svg-icon {
