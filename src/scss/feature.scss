@@ -22,6 +22,12 @@
 
       color: $c-white;
     }
+
+    @media ($m-m) {
+      bottom: 40px;
+
+      width: 560px;
+    }
   }
 
   &__headline {
@@ -31,6 +37,11 @@
     @media ($m-s) {
       font-size: 32px;
       margin-bottom: 12px;
+    }
+
+    @media ($m-m) {
+      font-size: 55px;
+      line-height: 50px;
     }
   }
 
@@ -42,6 +53,11 @@
     @media ($m-s) {
       font-size: 16px;
       line-height: 20px;
+    }
+
+    @media ($m-m) {
+      font-size: 18px;
+      line-height: 22px;
     }
   }
 
@@ -66,6 +82,12 @@
 
       width: 430px;
     }
+
+    @media ($m-m) {
+      left: -50px;
+
+      width: 540px;
+    }
   }
 
   &__bg {
@@ -81,6 +103,13 @@
       height: 300px;
 
       margin-top: 100px;
+    }
+
+    @media ($m-m) {
+      width: 100vw;
+      height: auto;
+
+      margin-top: 150px;
     }
   }
 }

@@ -16,6 +16,11 @@
       font-size: 28px;
       line-height: 32.76px;
     }
+
+    @media ($m-m) {
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
 
   &__headline {
@@ -28,6 +33,11 @@
       line-height: 80px;
 
       margin-bottom: 70px;
+    }
+
+    @media ($m-m) {
+      font-size: 98px;
+      line-height: 115px;
     }
   }
 
