@@ -1,3 +1,7 @@
 .view {
   padding-bottom: 5%;
+
+  @media ($m-l) {
+    padding-bottom: 0;
+  }
 }

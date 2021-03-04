@@ -7,6 +7,12 @@
     padding-top: 80px;
   }
 
+  @media ($m-m) {
+    & > .container {
+      width: 858px;
+    }
+  }
+
   &__subheadline {
     font-size: 1.2rem;
     text-transform: uppercase;
