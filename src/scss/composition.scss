@@ -2,11 +2,13 @@
   padding: 20px 0;
   height: 600px;
 
-  // min-width: 100vw;
-
   @media ($m-xxxxs) and (orientation: landscape) {
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  @media ($m-m) {
+    max-width: 768px;
   }
 
   font-family: $Franklin;
