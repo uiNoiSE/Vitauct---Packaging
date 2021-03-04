@@ -6,23 +6,59 @@
   max-width: none;
   font-family: $Futura;
   text-align: right;
-  // color: $c-white;
 
   &__text-wrap {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+
+    @media ($m-s) {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      bottom: 35px;
+
+      width: 420px;
+
+      color: $c-white;
+    }
+
+    @media ($m-m) {
+      bottom: 40px;
+
+      width: 560px;
+    }
   }
 
   &__headline {
     font-size: 1.5rem;
     margin-bottom: 12px;
+
+    @media ($m-s) {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    @media ($m-m) {
+      font-size: 55px;
+      line-height: 50px;
+    }
   }
 
   &__text {
     font-family: $Franklin;
     font-size: 0.8rem;
     line-height: 0.9rem;
+
+    @media ($m-s) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media ($m-m) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__flower {
@@ -38,15 +74,42 @@
     @media ($m-xxxsa) {
       width: 200px;
     }
+
+    @media ($m-s) {
+      left: -20px;
+      bottom: -24px;
+      right: auto;
+
+      width: 430px;
+    }
+
+    @media ($m-m) {
+      left: -50px;
+
+      width: 540px;
+    }
   }
 
   &__bg {
     align-self: center;
     left: 0;
     z-index: 0;
-    
+
     width: 100vw;
     margin-top: 60px;
-    // margin-left: -0.75rem;
+
+    @media ($m-s) {
+      width: 140vw;
+      height: 300px;
+
+      margin-top: 100px;
+    }
+
+    @media ($m-m) {
+      width: 100vw;
+      height: auto;
+
+      margin-top: 150px;
+    }
   }
 }

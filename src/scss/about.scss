@@ -3,20 +3,51 @@
   padding-top: 40px;
   font-family: $Futura;
 
+  @media ($m-s) {
+    padding-top: 80px;
+  }
+
   &__subheadline {
     font-size: 1.2rem;
     text-transform: uppercase;
     color: $c-fontcolor;
+
+    @media ($m-s) {
+      font-size: 28px;
+      line-height: 32.76px;
+    }
+
+    @media ($m-m) {
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
 
   &__headline {
     font-size: 2rem;
     text-transform: uppercase;
     color: $c-green;
+
+    @media ($m-s) {
+      font-size: 74px;
+      line-height: 80px;
+
+      margin-bottom: 70px;
+    }
+
+    @media ($m-m) {
+      font-size: 98px;
+      line-height: 115px;
+    }
   }
 
   &__logo {
     margin: 0 auto;
     width: 150px;
+
+    @media ($m-s) {
+      width: 250px;
+      height: 78px;
+    }
   }
 }

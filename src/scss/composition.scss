@@ -2,11 +2,13 @@
   padding: 20px 0;
   height: 600px;
 
-  // min-width: 100vw;
-
   @media ($m-xxxxs) and (orientation: landscape) {
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  @media ($m-m) {
+    max-width: 768px;
   }
 
   font-family: $Franklin;
@@ -42,6 +44,14 @@
       width: 195px;
       height: 265px;
       transform: rotateZ(-35deg);
+
+      @media ($m-s) {
+        top: 155px;
+        left: 170px;
+
+        width: 285px;
+        height: 355px;
+      }
     }
 
     &--cyan {
@@ -50,6 +60,14 @@
 
       width: 123px;
       height: 176px;
+
+      @media ($m-s) {
+        top: 144px;
+        left: 400px;
+
+        width: 193px;
+        height: 266px;
+      }
     }
 
     &--lime {
@@ -61,6 +79,14 @@
 
       transform: rotateZ(-28deg);
       filter: blur(0.5px);
+
+      @media ($m-s) {
+        top: 22px;
+        left: 290px;
+        
+        width: 159px;
+        height: 212px;
+      }
     }
 
     // description
@@ -74,6 +100,10 @@
 
       & > p {
         font-size: 12px;
+
+        @media ($m-s) {
+          font-size: 18px;
+        }
       }
 
       &--dandelion {
@@ -93,6 +123,23 @@
         & > p {
           margin-left: 5px;
         }
+
+        @media ($m-s) {
+          top: 372px;
+          left: 508px;
+
+          align-items: flex-end;
+
+          & > img {
+            width: 94.18px;
+
+            transform: none;
+          }
+
+          & > p {
+            margin-bottom: 5px;
+          }
+        }
       }
 
       &--calendula {
@@ -104,11 +151,34 @@
 
         align-items: flex-end;
 
+        @media ($m-s) {
+          top: 110px;
+          left: 30px;
+
+          align-items: flex-start;
+
+          & > p {
+            margin-top: -10px;
+          }
+        }
+
+        @media ($m-m) {
+          & > p > br {
+            display: none;
+          }
+        }
+
         & > img {
           width: 131.71px;
           height: 96.45px;
 
           transform: matrix(1, 0, 0, -1, 0, 0);
+
+          @media ($m-s) {
+            width: 150px;
+            height: 120px;
+            transform: none;
+          }
         }
       }
 
@@ -130,6 +200,23 @@
           margin-top: 10px;
           margin-left: 2px;
         }
+
+        @media ($m-s) {
+          top: 207px;
+          left: 531px;
+
+          width: 218.21px;
+          height: 110.65px;
+
+          & > img {
+            width: 141px;
+            height: 105px;
+          }
+
+          & > p {
+            margin-top: 30px;
+          }
+        }
       }
 
       &--mint {
@@ -150,12 +237,37 @@
           margin-right: -15px;
         }
 
+        @media ($m-s) {
+          top: 360px;
+          left: 77px;
+
+          width: 186px;
+          height: 134px;
+
+          & > img {
+            width: 176px;
+            height: 134px;
+          }
+
+          & > p {
+            margin-bottom: 10px;
+          }
+        }
+
         &-leaf {
           top: 282px;
           left: 161px;
 
           width: 43px;
           height: 38px;
+
+          @media ($m-s) {
+            top: 282px;
+            left: 381px;
+
+            width: 63px;
+            height: 48px;
+          }
         }
       }
 
@@ -179,12 +291,37 @@
           margin-right: 5px;
         }
 
+        @media ($m-s) {
+          top: 80px;
+          left: 475px;
+
+          & > img {
+            width: 107.5px;
+            height: 81.34px;
+
+            transform: none;
+          }
+
+          & > p {
+            order: 2;
+            margin-left: 10px;
+          }
+        }
+
         &-blured {
           top: 248px;
           left: 68.12%;
 
           width: 104px;
           height: 106px;
+
+          @media ($m-s) {
+            top: 250px;
+            left: 90px;
+
+            width: 84px;
+            height: 86px;
+          }
         }
       }
     }

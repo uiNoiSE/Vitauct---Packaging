@@ -8,5 +8,10 @@
     width: 120px;
     height: 26px;
     color: $c-green;
+
+    @media ($m-s) {
+      width: 239px;
+      height: 53.14px;
+    }
   }
 }
